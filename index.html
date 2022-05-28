@@ -15,108 +15,152 @@
     />
     <!-- fontawesome -->
     <link
-      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <!-- toolbar -->
+
     <!-- header -->
-    <header>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <span><i class="fa-solid fa-handshake"></i></span>  
-            Masterwork</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" -controls="navbarTogglerDemo02">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02" >
-            <ul class="navbar-nav .ml-auto ">
-                <li class="nav-item @@home-active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item @@about-active">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item dropdown @@dropdown-active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                        Pages <span class="fa fa-angle-down"></span>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item @@blog-active" href="blog.html">Blog posts</a>
-                        <a class="dropdown-item @@blog-single-active" href="blog-single.html">Blog single</a>
-                        <a class="dropdown-item" href="landing-single.html">Landing page</a>
-                    </div>
-                </li>
-                <li class="nav-item @@contact-active">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item ml-lg-3 ml-0 mt-lg-0 mt-3">
-                    <a class="btn btn-outline-primary theme-button" href="contact.html">Schedule a Demo</a>
-                </li>
-            </ul>
-        </div>
-            
-            
+    <header class="header fixed-top">
+      <div class="container">
+        <div class="header-item">
+          <div class="header-logo">
+            <i class="fa-regular fa-handshake"></i>
+            <span>Masterwork</span>
+          </div>
+          <div class="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                          <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                          <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                      </li>
+                      
+                    </ul>
+                    <a class="btn btn-outline-primary theme-button" href="#">SCHEDULE A DEMO</a>
+
+                  </div>
+                </div>
+              </nav>
+
             
           </div>
         </div>
-      </nav>
-  </div>
+      </div>
     </header>
+    <!-- right_sidebar -->
+    <section class="right_sidebar">
+      <div class="bg_right_sidebar d-flex flex-column align-items-center">
+        <div class="item_right_sidebar py-4">
+          <a href="">
+            <i class="fa-solid fa-angles-right"></i>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn btn_back">
+          <a href="">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back</span>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn">
+          <a href="">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn">
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Buy</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
     <!-- slider -->
     <section class="slider">
-        <div class="content">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 content-left">
-                      <h1>We Execute Our Ideas 
-                        From Start to Finish 
-                      </h1>
-                      <p class="mt-3 mb-lg-5 mb-4">Building a beautiful interactive business for startups and innovative companies.</p>
-                      <a href="about.html" class="btn btn-outline-primary theme-button">Get Started</a>
-                    </div>
-                    <div class="col-lg-6 content-photo mt-lg-0 mt-5">
-                      <img src="./images/main.png" class="img-fluid" alt="main image">
-                    </div>
-                  </div>
+      <div class="content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 content-left">
+              <h1>We Execute Our Ideas From Start to Finish</h1>
+              <p class="mt-3 mb-lg-5 mb-4">
+                Building a beautiful interactive business for startups and
+                innovative companies.
+              </p>
+              <a href="about.html" class="btn btn-outline-primary theme-button"
+                >Get Started</a
+              >
             </div>
+            <div class="col-lg-6 content-photo mt-lg-0 mt-5">
+              <img src="./images/main.png" class="img-fluid" alt="main image" />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- choous -->
     <section class="choous py-5">
       <div class="container py-md-3">
         <div class="choous-section text-center mx-auto">
-          <h2 class="sub-title">Why Choose Us</h26>
-          <h1>Tools for business startup to professional </h1>
-          <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-            Nulla mollis dapibus nunc, ut rhoncus
-            turpis sodales quis. Integer sit amet mattis quam.</p>
+          <h2 class="sub-title">WHY CHOOSE US</h2>
+          <h1>Tools for business startup to professional</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
         </div>
         <div class="row bottom_grids text-center">
           <div class="col-lg-4 col-md-6 mt-5">
             <div class="s-block">
               <a href="services.html" class="d-block">
                 <img src="./images/s1.png" alt="" class="img-fluid" />
-                <h3 class="my-3">Interactive</h3>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                <h1 class="my-3">Interactive</h1>
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tempora rerum perspiciatis?
+                </p>
               </a>
             </div>
           </div>
@@ -125,7 +169,10 @@
               <a href="services.html" class="d-block">
                 <img src="./images/s2.png" alt="" class="img-fluid" />
                 <h1 class="my-3">Business</h1>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tempora rerum perspiciatis?
+                </p>
               </a>
             </div>
           </div>
@@ -134,7 +181,10 @@
               <a href="services.html" class="d-block">
                 <img src="./images/s3.png" alt="" class="img-fluid" />
                 <h1 class="my-3">Inspiration</h1>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tempora rerum perspiciatis?
+                </p>
               </a>
             </div>
           </div>
@@ -142,19 +192,30 @@
       </div>
     </section>
     <!-- about -->
-    <section class="about py-5 about-color" style="background-color: #F7F9FC;">
+    <section class="about py-5 about-color" style="background-color: #f7f9fc">
       <div class="container py-lg-3 mt-3">
         <div class="row align-items-center">
           <div class="col-lg-6 book-info pr-lg-5">
             <h2 class="sub-title">About Our Company</h2>
-            <h1 class="mb-md-4 mb-3">The Best Choice For Your Successful Business!</h1>
-            <p class="mb-md-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam nihil totam
-              reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse nesciunt ea fuga facere
-              voluptatem.</p>
-            <a href="#" class="btn btn-outline-primary theme-button">Read More</a>
+            <h1 class="mb-md-4 mb-3">
+              The Best Choice For Your Successful Business!
+            </h1>
+            <p class="mb-md-5 mb-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
+              repellendus illum harum quam nihil totam reprehenderit! Ut sed
+              eveniet quos! Asperiores officia, repudiandae similique
+              reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
+            </p>
+            <a href="#" class="btn btn-outline-primary theme-button"
+              >Read More</a
+            >
           </div>
           <div class="col-lg-6 pl-lg-5 mt-lg-0 mt-5">
-            <img src="./images/about.jpg" class="img-fluid shadow img-curve" alt="" />
+            <img
+              src="./images/about.jpg"
+              class="img-fluid shadow img-curve"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -166,22 +227,37 @@
           <div class="col-lg-4 col-sm-6">
             <div class="number_info counter_grid">
               <h4>Happy Customers</h4>
-              <p class="counter">10458</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+              <p
+                class="counter"
+                data-counter-time="2000"
+                data-counter-delay="10"
+              >
+                10458
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
             <div class="number_info counter_grid1">
               <h4>Winning Awards</h4>
               <p class="counter">890</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
             <div class="number_info counter_grid">
               <h4>Completed Projects</h4>
               <p class="counter">5345</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
             </div>
           </div>
         </div>
@@ -192,11 +268,22 @@
       <div class="container">
         <div class="middle-section">
           <div class="section-width">
-            <h5>We are true to ourselves, and commit to always perform at our best.</h5>
+            <h5>
+              We are true to ourselves, and commit to always perform at our
+              best.
+            </h5>
           </div>
           <div class="link-list-menu">
-            <p class="mt-md-4 mt-3 mb-md-5 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet voluptatum illo consequatur placeat fugit ducimus.</p>
-              <a href="about.html" class="btn btn-light theme-button">Read more</a>
+            <p class="mt-md-4 mt-3 mb-md-5 mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, doloribus atque. Corrupti exercitationem
+              voluptatem ipsum iste consequuntur et vitae voluptas temporibus?
+              Maxime dolores amet voluptatum illo consequatur placeat fugit
+              ducimus.
+            </p>
+            <a href="about.html" class="btn btn-light theme-button"
+              >Read more</a
+            >
           </div>
         </div>
       </div>
@@ -207,55 +294,99 @@
         <div class="container py-lg-3">
           <div class="header-section text-center mx-auto">
             <h2 class="sub-title">We are here for you</h2>
-            <h1>Explore Solutions </h1>
-            <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-              Nulla mollis dapibus nunc, ut rhoncus
-              turpis sodales quis. Integer sit amet mattis quam.</p>
+            <h1>Explore Solutions</h1>
+            <p class="my-3">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
           </div>
           <div class="solution-content">
             <div class="row">
               <div class="col-lg-4 col-md-6 mt-5">
                 <div class="solution-item">
                   <a href="#blog-single.html" class="d-block zoom">
-                    <img src="./images/b1.jpg" alt="" class="img-fluid news-image" />
-    
+                    <img
+                      src="./images/b1.jpg"
+                      alt=""
+                      class="img-fluid news-image"
+                    />
+
                     <p class="date">26 Jan, 2020</p>
                   </a>
                   <div class="blog-info">
                     <label class="tag-label red">Business</label>
-                    <h4><a href="#blog-single.html">Corporate, Business & Digital Agency</a></h4>
-                    <p class="blog-text">Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde earum...</p>
-                    <a href="#blog-single.html" class="btn btn-news">Know More <span><i class="fa-solid fa-arrow-right"></i></span> </a>
+                    <h4>
+                      <a href="#blog-single.html"
+                        >Corporate, Business & Digital Agency</a
+                      >
+                    </h4>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
+                      molestiae ullam ipsam quas unde earum...
+                    </p>
+                    <a href="#blog-single.html" class="btn btn-news"
+                      >Know More
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 mt-5">
                 <div class="solution-item">
                   <a href="#blog-single.html" class="d-block zoom">
-                    <img src="./images/b7.jpg" alt="" class="img-fluid news-image" />
-                  
+                    <img
+                      src="./images/b7.jpg"
+                      alt=""
+                      class="img-fluid news-image"
+                    />
+
                     <p class="date">15 Apr, 2020</p>
                   </a>
                   <div class="blog-info">
                     <label class="tag-label green">Design</label>
-                    <h4><a href="#blog-single.html">Corporate, Business & Digital Agency</a></h4>
-                    <p class="blog-text">Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde earum...</p>
-                    <a href="#blog-single.html" class="btn btn-news">Know More <span><i class="fa-solid fa-arrow-right"></i></span> </a>
+                    <h4>
+                      <a href="#blog-single.html"
+                        >Corporate, Business & Digital Agency</a
+                      >
+                    </h4>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
+                      molestiae ullam ipsam quas unde earum...
+                    </p>
+                    <a href="#blog-single.html" class="btn btn-news"
+                      >Know More
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 mt-5">
                 <div class="solution-item">
                   <a href="#blog-single.html" class="d-block zoom">
-                    <img src="./images/b3.jpg" alt="" class="img-fluid news-image" />
-                  
+                    <img
+                      src="./images/b3.jpg"
+                      alt=""
+                      class="img-fluid news-image"
+                    />
+
                     <p class="date">25 Jun, 2020</p>
                   </a>
                   <div class="blog-info">
                     <label class="tag-label blue">Industry</label>
-                    <h4><a href="#blog-single.html">Corporate, Business & Digital Agency</a></h4>
-                    <p class="blog-text">Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde earum...</p>
-                    <a href="#blog-single.html" class="btn btn-news">Know More <span><i class="fa-solid fa-arrow-right"></i></span> </a>
+                    <h4>
+                      <a href="#blog-single.html"
+                        >Corporate, Business & Digital Agency</a
+                      >
+                    </h4>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet nostrum ad minus libero fugiat
+                      molestiae ullam ipsam quas unde earum...
+                    </p>
+                    <a href="#blog-single.html" class="btn btn-news"
+                      >Know More
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -265,157 +396,358 @@
       </section>
     </section>
     <!-- FAQ -->
-    <div class="FAQ py-5" >
+    <div class="FAQ py-5">
       <div class="container py-lg-5">
         <div class="header-section text-center mx-auto">
           <h2 class="sub-title">Questions and Answers</h2>
-          <h1>General FAQs </h1>
-          <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-            Nulla mollis dapibus nunc, ut rhoncus
-            turpis sodales quis. Integer sit amet mattis quam.</p>
+          <h1>General FAQs</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
         </div>
         <div class="row">
           <div class="col-md-5 mt-5">
             <div class="faq-image">
-              <img src="./images/women.jpg" class="img-fluid shadow img-curve" alt="">
+              <img
+                src="./images/women.jpg"
+                class="img-fluid shadow img-curve"
+                alt=""
+              />
             </div>
           </div>
           <div class="col-md-7 mt-5 pl-lg-5">
             <section class="faq-content">
               <div class="faq-page">
-                <ul>
-                  <li>
-                    
-                    <i></i>
-                    <h5>There are many passages but the majority?</h5>
-                    <p>Voluptates amet earum velit nobis aliquam
-                      laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                      non assumenda, incidunt officiis eaque iste minima autem.</p>
-                  </li>
-                  <li>
-                   
-                    <i></i>
-                    <h5>Sed ut perspiciatis unde omnis?</h5>
-                    <p>Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
-                      laboriosam nihil debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
-                      voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
-                  </li>
-                  <li>
-                    
-                    <i></i>
-                    <h5>At vero eos iusto odio ducimus qui?</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
-                      laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
-                      non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
-                      voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
-                  </li>
-                  <li>
-                   
-                    <i></i>
-                    <h5>We denounce with righteous?</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
-                      laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente
-                      non assumenda excepturi aperiam iste minima autem.</p>
-                  </li>
-                  <li>
-                   
-                    <i></i>
-                    <h5>perspiciatis unde omnis?</h5>
-                    <p>Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
-                      laboriosam nihil debitis animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
-                      voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
-                  </li>
-                  <li>
-                   
-                    <i></i>
-                    <h5>At vero eos iusto odio ducimus qui?</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam
-                      laboriosam nihil quasi fuga, ad corrupti libero omnis sapiente
-                      non assumenda excepturi aperiam animi vitae eos nisi laudantium. Tempore reiciendis ipsam culpa, qui
-                      voluptates eveniet, incidunt officiis eaque iste minima autem.</p>
-                  </li>
-                </ul>
+                <div
+                  class="accordion accordion-flush faq-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header p-0" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        There are many passages but the majority?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Voluptates amet earum velit nobis aliquam laboriosam
+                        nihil debitis facere voluptatibus consectetur quae quasi
+                        fuga, ad corrupti libero omnis sapiente non assumenda,
+                        incidunt officiis eaque iste minima autem.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="p-0" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Sed ut perspiciatis unde omnis?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Sit amet consectetur adipisicing elit. Voluptates amet
+                        earum velit nobis aliquam laboriosam nihil debitis animi
+                        vitae eos nisi laudantium. Tempore reiciendis ipsam
+                        culpa, qui voluptates eveniet, incidunt officiis eaque
+                        iste minima autem.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="p-0" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        At vero eos iusto odio ducimus qui?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Voluptates amet earum velit nobis aliquam
+                        laboriosam nihil quasi fuga, ad corrupti libero omnis
+                        sapiente non assumenda excepturi aperiam animi vitae eos
+                        nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                        voluptates eveniet, incidunt officiis eaque iste minima
+                        autem.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="p-0" id="flush-headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        perspiciatis unde omnis?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFour"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Voluptates amet earum velit nobis aliquam
+                        laboriosam nihil debitis facere voluptatibus consectetur
+                        quae quasi fuga, ad corrupti libero omnis sapiente non
+                        assumenda excepturi aperiam iste minima autem.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="p-0" id="flush-headingFive">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFive"
+                      >
+                        perspiciatis unde omnis?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFive"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Sit amet consectetur adipisicing elit. Voluptates amet
+                        earum velit nobis aliquam laboriosam nihil debitis animi
+                        vitae eos nisi laudantium. Tempore reiciendis ipsam
+                        culpa, qui voluptates eveniet, incidunt officiis eaque
+                        iste minima autem.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="p-0" id="flush-headingSix">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                      >
+                        At vero eos iusto odio ducimus qui?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseSix"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingSix"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Voluptates amet earum velit nobis aliquam
+                        laboriosam nihil quasi fuga, ad corrupti libero omnis
+                        sapiente non assumenda excepturi aperiam animi vitae eos
+                        nisi laudantium. Tempore reiciendis ipsam culpa, qui
+                        voluptates eveniet, incidunt officiis eaque iste minima
+                        autem.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
           </div>
         </div>
       </div>
-    
     </div>
+
     <!-- featured -->
     <section class="featured py-5 mb-4" id="">
       <div class="container py-lg-3">
         <div class="header-section text-center mx-auto">
           <h2 class="sub-title">Featured Cases</h2>
-          <h1>Completed Projects </h1>
-          <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-            Nulla mollis dapibus nunc, ut rhoncus
-            turpis sodales quis. Integer sit amet mattis quam.</p>
+          <h1>Completed Projects</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
         </div>
-      <div class="featured-bottom">
-        <div class="nav flex nav-pills me-3" id="v-pills-tab" role="tablist">
-          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#one" type="button" role="tab">Project One</button>
-          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#two" type="button" role="tab" >Project Two</button>
-          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#three" type="button" role="tab">Project Three</button>
-     
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="one" role="tabpanel" >
-            <div class="row">
-              <div class="col-md-6">
-                <h1>Why a visual identity system is more memorable</h1>
-                <p>
-                  Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus
-                  aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
-                </p>
-                <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
+        <div class="featured-bottom">
+          <div class="nav flex nav-pills me-3" id="v-pills-tab" role="tablist">
+            <button
+              class="nav-link featured-project"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#one"
+              type="button"
+              role="tab"
+            >
+              Project One
+            </button>
+            <button
+              class="nav-link featured-project"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#two"
+              type="button"
+              role="tab"
+            >
+              Project Two
+            </button>
+            <button
+              class="nav-link featured-project"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#three"
+              type="button"
+              role="tab"
+            >
+              Project Three
+            </button>
+          </div>
+          <div class="tab-content px-5" id="v-pills-tabContent">
+            <div
+              class="featured-item tab-pane fade show active"
+              id="one"
+              role="tabpanel"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <h1>Why a visual identity system is more memorable</h1>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae
+                    perferendis dolores praesentium nulla quibusdam repellendus.
+                    consequatur minus aliquam corrupti blanditiis,
+                    necessitatibus consectetur modi ipsum natus accusantium sit
+                    pariatur.
+                  </p>
+                  <a
+                    href="#url"
+                    class="btn btn-outline-primary theme-button mt-3"
+                    >Know More</a
+                  >
+                </div>
+                <div class="col-md-6 mt-md-0 mt-5">
+                  <img
+                    src="./images/b4.jpg"
+                    class="img-fluid img-curve"
+                    alt="project image"
+                  />
+                </div>
               </div>
-              <div class="col-md-6 mt-md-0 mt-5">
-                <img src="./images/b4.jpg" class="img-fluid img-curve" alt="project image">
+            </div>
+            <div class="featured-item tab-pane fade" id="two" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6">
+                  <img
+                    src="./images/b5.jpg"
+                    class="img-fluid img-curve"
+                    alt="project image"
+                  />
+                </div>
+                <div class="col-md-6 mt-md-0 mt-5">
+                  <h1>Make website that looks Lorem, ipsum dolor.</h1>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae
+                    perferendis dolores praesentium nulla quibusdam repellendus.
+                    consequatur minus aliquam corrupti blanditiis,
+                    necessitatibus consectetur modi ipsum natus accusantium sit
+                    pariatur.
+                  </p>
+                  <a
+                    href="#url"
+                    class="btn btn-outline-primary theme-button mt-3"
+                    >Know More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="featured-item tab-pane fade" id="three" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1>Why a visual identity system is more memorable</h1>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae
+                    perferendis dolores praesentium nulla quibusdam repellendus.
+                    consequatur minus aliquam corrupti blanditiis,
+                    necessitatibus consectetur modi ipsum natus accusantium sit
+                    pariatur.
+                  </p>
+                  <a
+                    href="#url"
+                    class="btn btn-outline-primary theme-button mt-3"
+                    >Know More</a
+                  >
+                </div>
+                <div class="col-md-6 mt-md-0 mt-5">
+                  <img
+                    src="./images/b6.jpg"
+                    class="img-fluid img-curve"
+                    alt="project image"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="two" role="tabpanel" > <div class="row">
-            <div class="col-md-6">
-              <img src="./images/b5.jpg" class="img-fluid img-curve" alt="project image">
-            </div>
-            <div class="col-md-6 mt-md-0 mt-5">
-              <h1>Make website that looks Lorem, ipsum dolor.</h1>
-              <p>
-                Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus
-                aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
-              </p>
-              <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
-            </div>
-          </div></div>
-          <div class="tab-pane fade" id="three" role="tabpanel" >  <div class="row">
-            <div class="col-md-6">
-              <h1>Why a visual identity system is more memorable</h1>
-              <p>
-                Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam repellendus. consequatur minus
-                aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
-              </p>
-              <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
-            </div>
-            <div class="col-md-6 mt-md-0 mt-5">
-              <img src="./images/b6.jpg" class="img-fluid img-curve" alt="project image">
-            </div>
-          </div></div>
-          
         </div>
       </div>
-      </div>
     </section>
+
     <!-- testimonial -->
-    <section class="testimonials" id="-content">
-      <div class="testimonials-content py-5">
+    <section class="testimonial" id="testimonials">
+      <div class="testimonials py-5">
         <div class="container py-lg-3">
           <div class="header-section text-center mx-auto">
-            <h6 class="sub-title">Our Clients -content</h6>
-            <h3>What People Say </h3>
-            <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-              Nulla mollis dapibus nunc, ut rhoncus
-              turpis sodales quis. Integer sit amet mattis quam.</p>
+            <h2 class="sub-title">Our Clients Testimonials</h2>
+            <h1>What People Say</h1>
+            <p class="my-3">
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus
+              turpis sodales quis. Integer sit amet mattis quam.
+            </p>
           </div>
           <div class="row mt-4">
             <div class="col-md-12 mx-auto pb-5">
@@ -423,11 +755,20 @@
                 <div class="item">
                   <div class="slider-info mt-lg-4 mt-3">
                     <div class="img-circle">
-                      <img src="./images/team3.jpg" class="img-fluid testimonial-img" alt="client image">
+                      <img
+                        src="./images/team3.jpg"
+                        class="img-fluid testimonial-img"
+                        alt="client image"
+                      />
                     </div>
                     <div class="message">
                       <span class="fa fa-quote-left" aria-hidden="true"></span>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda corporis deleniti praesentium doloremque.
+                        Repellendus soluta quos nemo quisquam consectetur
+                        temporibus quam obcaecati sapiente quaerat et.
+                      </p>
                       <div class="name mt-4">
                         <h4>Isabella Mia</h4>
                         <p>Company name</p>
@@ -438,11 +779,20 @@
                 <div class="item">
                   <div class="slider-info mt-lg-4 mt-3">
                     <div class="img-circle">
-                      <img src="./images/team4.jpg" class="img-fluid testimonial-img" alt="client image">
+                      <img
+                        src="./images/team4.jpg"
+                        class="img-fluid testimonial-img"
+                        alt="client image"
+                      />
                     </div>
                     <div class="message">
                       <span class="fa fa-quote-left" aria-hidden="true"></span>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda corporis deleniti praesentium doloremque.
+                        Repellendus soluta quos nemo quisquam consectetur
+                        temporibus quam obcaecati sapiente quaerat et.
+                      </p>
                       <div class="name mt-4">
                         <h4>Benjamin Lucas</h4>
                         <p>Company name</p>
@@ -453,11 +803,20 @@
                 <div class="item">
                   <div class="slider-info mt-lg-4 mt-3">
                     <div class="img-circle">
-                      <img src="./images/team5.jpg" class="img-fluid testimonial-img" alt="client image">
+                      <img
+                        src="./images/team5.jpg"
+                        class="img-fluid testimonial-img"
+                        alt="client image"
+                      />
                     </div>
                     <div class="message">
                       <span class="fa fa-quote-left" aria-hidden="true"></span>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda corporis deleniti praesentium doloremque.
+                        Repellendus soluta quos nemo quisquam consectetur
+                        temporibus quam obcaecati sapiente quaerat et.
+                      </p>
                       <div class="name mt-4">
                         <h4>Oliver Bradley</h4>
                         <p>Company name</p>
@@ -468,11 +827,20 @@
                 <div class="item">
                   <div class="slider-info mt-lg-4 mt-3">
                     <div class="img-circle">
-                      <img src="./images/team6.jpg" class="img-fluid testimonial-img" alt="client image">
+                      <img
+                        src="./images/team6.jpg"
+                        class="img-fluid testimonial-img"
+                        alt="client image"
+                      />
                     </div>
                     <div class="message">
                       <span class="fa fa-quote-left" aria-hidden="true"></span>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda corporis deleniti praesentium doloremque.
+                        Repellendus soluta quos nemo quisquam consectetur
+                        temporibus quam obcaecati sapiente quaerat et.
+                      </p>
                       <div class="name mt-4">
                         <h4>William James</h4>
                         <p>Company name</p>
@@ -486,21 +854,188 @@
         </div>
       </div>
     </section>
+
     <!-- community -->
+    <section class="community py-5">
+      <div class="container py-md-3 text-center">
+        <div class="header-section text-center mx-auto">
+          <h1>Ready to build your own brand community?</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="buttons mt-5">
+          <a
+            href="contact.html"
+            class="btn btn-outline-primary buttons-left theme-button"
+            >Book a Demo</a
+          >
+          <a
+            href="contact.html"
+            class="btn btn-primary buttons-right theme-button ml-2"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
     <!-- footer -->
-    <!-- copyright -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <div class="col-big">
+            <div class="row-small">
+              <div class="col-small">
+                <h3>Company</h3>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-small">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>
+                    <a href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Branches</a>
+                  </li>
+                  <li><a href="#">Latest Media</a></li>
+                  <li><a href="#">About Our Company</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              <div class="col-small">
+                <h3>Our Services</h3>
+                <ul>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Terms</a>
+                  </li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Landing Page</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          
+
+          </div>
+          <div class="col-big">
+            <h3>Newsletter</h3>
+            <div class="right-col">
+              <h4>Get the latest updates and offers.</h4>
+              <form action="#" class="subscribe" method="post">
+                <input type="email" name="email" placeholder="Email Adress" required>
+                <button type="submit">Go</button>
+                <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+              </form>
+            </div>
+          </div> 
+        </div>
+        <div class="footer-below">
+          <div class="below-right">
+            © 2020 Masterwork. All rights reserved | Designed by
+            <a href="#">NguyenTuongGiang</a>
+          </div>
+          <div class="below-left">
+            <ul class="social">
+              <li><a href="#facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a></li>
+              <li><a href="#linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a></li>
+              <li><a href="#twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a></li>
+              <li><a href="#google">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a></li>
+              <li><a href="#github">
+                <i class="fa-brands fa-github"></i>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- script -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"
+      integrity="sha512-lzIDzaYCox5oeC0ymj6ho5fRdMrCYkhHfVEm3fySZStdwG85y9SxTcIFYYEUiW1KYbkfiInVFkGofRlYlkHgLw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="jquery.countup.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js" integrity="sha512-lzIDzaYCox5oeC0ymj6ho5fRdMrCYkhHfVEm3fySZStdwG85y9SxTcIFYYEUiW1KYbkfiInVFkGofRlYlkHgLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js" integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
- 
- 
- 
- 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-two").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: false,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: false,
+            },
+            1000: {
+              items: 2,
+              nav: false,
+            },
+          },
+        });
+      });
+    </script>
+
+    <script>
+      $(".counter").countUp({
+        time: 5000,
+        delay: 10,
+      });
+    </script>
   </body>
 </html>
