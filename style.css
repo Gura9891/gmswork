@@ -99,10 +99,6 @@ a {
   padding: 0 25px;
 }
 
-.header-bg {
-  background-color: white;
-}
-
 header {
   display: grid;
   align-items: center;
@@ -112,15 +108,7 @@ header {
   height: 90px;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
-
-.header-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-item .header-logo {
+.header-logo {
   color: #dc4f72;
   font-size: 26px;
   font-weight: 700;
@@ -180,7 +168,9 @@ li.nav-item {
   padding: 15px 20px;
   background: #f7f9fc;
 }
-
+.navbar-light .navbar-toggler {
+  color: rgb(220 79 114) !important;
+}
 .breadcrumb {
   margin-top: 90px;
   margin-bottom: 0;
@@ -1660,6 +1650,47 @@ nav#pageabout a:hover {
   border-radius: 6px;
 }
 
+/* backToTop  */
+
+#btt {
+  display: inline-block;
+  background-color: #dc4f72;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  color: #ffffff;
+}
+#btt::after {
+  content: "\f106";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#btt:hover {
+  cursor: pointer;
+}
+#btt:active {
+  background-color: #dc4f72;
+}
+#btt.show {
+  opacity: 1;
+  visibility: visible;
+}
+#btt span.fa {
+  bottom: 15px;
+}
+
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 960px) {
@@ -1700,15 +1731,15 @@ nav#pageabout a:hover {
   .footer .col-big {
     width: 100%;
   }
-.history .fea-gd-vv {
-  display: block;
-}
-.history .col-sm-6 {
-  width: 100%;
-}
-.history h5 {
-  text-align: center;
-}
+  .history .fea-gd-vv {
+    display: block;
+  }
+  .history .col-sm-6 {
+    width: 100%;
+  }
+  .history h5 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
