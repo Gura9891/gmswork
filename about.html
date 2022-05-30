@@ -30,8 +30,6 @@
 
     <!-- CSS -->
 
-    
-
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -48,9 +46,6 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
             style="background-color: #dc4f72"
           >
             <span>
@@ -63,13 +58,13 @@
           >
             <ul class="navbar-nav ml-auto align-items-center">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-danger" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="/services.html">Services</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -78,24 +73,28 @@
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   Pages
                 </a>
-                <ul
-                  class="dropdown-menu p-1 text-start"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                  <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                <ul class="dropdown-menu p-1 text-start">
+                  <li>
+                    <a class="dropdown-item" href="/BlogPost.html"
+                      >Blog Posts</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/BlogPage.html"
+                      >Blog Single</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">Landing Page</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="/Contact.html">Contact</a>
               </li>
               <li class="nav-item ms-2">
-                <a class="btn btn-outline-primary theme-button" href="#"
+                <a class="btn btn-outline-primary theme-button" href="/Contact.html"
                   >SCHEDULE A DEMO</a
                 >
               </li>
@@ -104,41 +103,40 @@
         </div>
       </nav>
     </header>
-        <!-- right_sidebar -->
-        <section class="right_sidebar">
-          <div class="bg_right_sidebar d-flex flex-column align-items-center">
-            <div class="item_right_sidebar py-4">
-              <a href="">
-                <i class="fa-solid fa-angles-right"></i>
-              </a>
-            </div>
-            <div class="item_right_sidebar mb-3 btn btn_back">
-              <a href="">
-                <i class="fa-solid fa-arrow-left"></i>
-                <span>Back</span>
-              </a>
-            </div>
-            <div class="item_right_sidebar mb-3 btn">
-              <a href="">
-                <i class="fa-solid fa-download"></i>
-                <span>Download</span>
-              </a>
-            </div>
-            <div class="item_right_sidebar mb-3 btn">
-              <a href="">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>Buy</span>
-              </a>
-            </div>
-    
-          </div>
-        </section>
+    <!-- right_sidebar -->
+    <section class="right_sidebar">
+      <div class="bg_right_sidebar d-flex flex-column align-items-center">
+        <div class="item_right_sidebar py-4">
+          <a href="">
+            <i class="fa-solid fa-angles-right"></i>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn btn_back">
+          <a href="">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back</span>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn">
+          <a href="">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn">
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Buy</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- home> about -->
     <nav id="pageabout" class="pageabout">
       <div class="container pageabout-item">
         <a href="index.html">Home</a> »
-        <span class="breadcrumb_last" aria-current="page">About</span>
+        <span class="breadcrumb_last">About</span>
       </div>
     </nav>
     <!-- about-aboutus -->
@@ -309,21 +307,22 @@
         <div class="video__title">
           <h3>CREATIVE SOLUTIONS</h3>
           <h1>Watch Our Two Minute Intro</h1>
-          <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</span>
+          <span
+            >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.</span
+          >
         </div>
         <div class="video__content">
           <div class="video__content-img">
-            <img src="./images/b9.jpg" alt="videocontent">
+            <img src="./images/b9.jpg" alt="videocontent" />
             <div class="video__content-icon">
               <a href="#">
                 <i class="fa fa-play"></i>
               </a>
-
             </div>
           </div>
-          <button class="btn-request">
-            REQUEST AQOUTE
-          </button>
+          <button class="btn-request">REQUEST A QUOTE</button>
         </div>
       </div>
     </section>
@@ -332,11 +331,19 @@
     <section class="about-autoplay">
       <div class="container">
         <div class="owl-carousel owl-theme">
-          <div class="item"><img src="./images/logo1.jpg" alt="IMG Customer"></div>
-          <div class="item"><img src="./images/logo2.jpg" alt="IMG Customer"></div>
-          <div class="item"><img src="./images/logo3.jpg" alt="IMG Customer"></div>
-          <div class="item"><img src="./images/logo4.jpg" alt="IMG Customer"></div>
-      </div>
+          <div class="item">
+            <img src="./images/logo1.jpg" alt="IMG Customer" />
+          </div>
+          <div class="item">
+            <img src="./images/logo2.jpg" alt="IMG Customer" />
+          </div>
+          <div class="item">
+            <img src="./images/logo3.jpg" alt="IMG Customer" />
+          </div>
+          <div class="item">
+            <img src="./images/logo4.jpg" alt="IMG Customer" />
+          </div>
+        </div>
       </div>
     </section>
     <!-- member -->
@@ -356,7 +363,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team1.jpg"
                       alt=""
@@ -364,7 +371,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Gwen Johnson</a></h3>
+                  <h3 class="name-pos"><a href="#">Gwen Johnson</a></h3>
                   <p>Founder &amp; CEO</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -381,7 +388,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap mt-sm-0 pt-sm-0 mt-4 pt-2">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team2.jpg"
                       alt=""
@@ -389,7 +396,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Daniel Roberto</a></h3>
+                  <h3 class="name-pos"><a href="#">Daniel Roberto</a></h3>
                   <p>Regional Manager</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -406,7 +413,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 pt-lg-0 mt-4 pt-2">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team3.jpg"
                       alt=""
@@ -414,7 +421,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Dhony Abraham</a></h3>
+                  <h3 class="name-pos"><a href="#">Dhony Abraham</a></h3>
                   <p>Managing Partner</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -431,7 +438,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 pt-lg-0 mt-4 pt-2">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team4.jpg"
                       alt=""
@@ -439,7 +446,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Marko Dugonji</a></h3>
+                  <h3 class="name-pos"><a href="#">Marko Dugonji</a></h3>
                   <p>Cheif Executive</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -456,7 +463,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team5.jpg"
                       alt=""
@@ -464,7 +471,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Anthony</a></h3>
+                  <h3 class="name-pos"><a href="#">Anthony</a></h3>
                   <p>Engineering Officer</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -481,7 +488,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team6.jpg"
                       alt=""
@@ -489,7 +496,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Emma Stone</a></h3>
+                  <h3 class="name-pos"><a href="#">Emma Stone</a></h3>
                   <p>Team Leader</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -506,7 +513,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team7.jpg"
                       alt=""
@@ -514,7 +521,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Rhoda Byrd</a></h3>
+                  <h3 class="name-pos"><a href="#">Rhoda Byrd</a></h3>
                   <p>Technology Officer</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -531,7 +538,7 @@
             <div class="col-lg-3 col-sm-6 team-wrap mt-4 pt-2">
               <div class="team-info">
                 <div class="column position-relative img-circle">
-                  <a href="#url"
+                  <a href="#"
                     ><img
                       src="./images/team8.jpg"
                       alt=""
@@ -539,7 +546,7 @@
                   /></a>
                 </div>
                 <div class="column-btm">
-                  <h3 class="name-pos"><a href="#url">Max Stoiber</a></h3>
+                  <h3 class="name-pos"><a href="#">Max Stoiber</a></h3>
                   <p>Manager</p>
                   <div class="social">
                     <a href="#facebook" class="facebook"
@@ -556,124 +563,139 @@
         </div>
       </div>
     </section>
-        <!-- community -->
-        <section class="community py-5">
-          <div class="container py-md-3 text-center">
-            <div class="header-section text-center mx-auto">
-              <h1>Ready to build your own brand community?</h1>
-              <p class="my-3">
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
-                sodales quis. Integer sit amet mattis quam.
-              </p>
-            </div>
-            <div class="buttons mt-5">
-              <a
-                href="contact.html"
-                class="btn btn-outline-primary buttons-left theme-button"
-                >Book a Demo</a
-              >
-              <a
-                href="contact.html"
-                class="btn btn-primary buttons-right theme-button ml-2"
-                >Get Started</a
-              >
-            </div>
-          </div>
-        </section>
-        <!-- footer -->
-        <footer class="footer">
-          <div class="container">
-            <div class="footer-item">
-              <div class="col-big">
-                <div class="row-small">
-                  <div class="col-small">
-                    <h3>Company</h3>
-                    <ul>
-                      <li>
-                        <a href="#">Home</a>
-                      </li>
-                      <li>
-                        <a href="#">About Us</a>
-                      </li>
-                      <li><a href="#">Service</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Contact Us</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-small">
-                    <h3>Useful Links</h3>
-                    <ul>
-                      <li>
-                        <a href="#">Case Studies</a>
-                      </li>
-                      <li>
-                        <a href="#">Our Branches</a>
-                      </li>
-                      <li><a href="#">Latest Media</a></li>
-                      <li><a href="#">About Our Company</a></li>
-                      <li><a href="#">Our People</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-small">
-                    <h3>Our Services</h3>
-                    <ul>
-                      <li>
-                        <a href="#">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <a href="#">Our Terms</a>
-                      </li>
-                      <li><a href="#">Service</a></li>
-                      <li><a href="#">Landing Page</a></li>
-                      <li><a href="#">Our People</a></li>
-                    </ul>
-                  </div>
-                  
-                </div>
-              
-    
+    <!-- community -->
+    <section class="community py-5">
+      <div class="container py-md-3 text-center">
+        <div class="header-section text-center mx-auto">
+          <h1>Ready to build your own brand community?</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="buttons mt-5">
+          <a
+            href="contact.html"
+            class="btn btn-outline-primary buttons-left theme-button"
+            >Book a Demo</a
+          >
+          <a
+            href="contact.html"
+            class="btn btn-primary buttons-right theme-button ml-2"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <div class="col-big">
+            <div class="row-small">
+              <div class="col-small">
+                <h3>Company</h3>
+                <ul>
+                  <li>
+                    <a href="/index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="/about.html">About Us</a>
+                  </li>
+                  <li><a href="/services.html">Service</a></li>
+                  <li><a href="/BlogPost.html">Blog</a></li>
+                  <li><a href="/Contact.html">Contact Us</a></li>
+                </ul>
               </div>
-              <div class="col-big">
-                <h3>Newsletter</h3>
-                <div class="right-col">
-                  <h4>Get the latest updates and offers.</h4>
-                  <form action="#" class="subscribe" method="post">
-                    <input type="email" name="email" placeholder="Email Adress" required>
-                    <button type="submit">Go</button>
-                    <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
-                  </form>
-                </div>
-              </div> 
-            </div>
-            <div class="footer-below">
-              <div class="below-right">
-                © 2020 Masterwork. All rights reserved | Designed by
-                <a href="#">NguyenTuongGiang</a>
+              <div class="col-small">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>
+                    <a href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Branches</a>
+                  </li>
+                  <li><a href="#">Latest Media</a></li>
+                  <li><a href="#">About Our Company</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
               </div>
-              <div class="below-left">
-                <ul class="social">
-                  <li><a href="#facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a></li>
-                  <li><a href="#linkedin">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a></li>
-                  <li><a href="#twitter">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a></li>
-                  <li><a href="#google">
-                    <i class="fa-brands fa-google-plus-g"></i>
-                  </a></li>
-                  <li><a href="#github">
-                    <i class="fa-brands fa-github"></i>
-                  </a></li>
+              <div class="col-small">
+                <h3>Our Services</h3>
+                <ul>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Terms</a>
+                  </li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Landing Page</a></li>
+                  <li><a href="#">Our People</a></li>
                 </ul>
               </div>
             </div>
           </div>
-        </footer>
-        
+          <div class="col-big">
+            <h3>Newsletter</h3>
+            <div class="right-col">
+              <h4>Get the latest updates and offers.</h4>
+              <form action="#" class="subscribe" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Adress"
+                  required
+                />
+                <button type="submit">Go</button>
+                <p>
+                  Sign up for our latest news & articles. We won’t give you spam
+                  mails.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-below">
+          <div class="below-right">
+            © 2020 Masterwork. All rights reserved | Designed by
+            <a href="#">NguyenTuongGiang</a>
+          </div>
+          <div class="below-left">
+            <ul class="social">
+              <li>
+                <a href="#facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#google">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#github">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <a id="btt"></a>
     <!-- script -->
     <script
@@ -691,7 +713,8 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"F
+      crossorigin="anonymous"
+      F
       referrerpolicy="no-referrer"
     ></script>
 
@@ -703,30 +726,29 @@
     ></script>
 
     <script>
-      var owl = $('.owl-carousel');
-       owl.owlCarousel({
-       items:4,
-       loop:true,
-       margin:10,
-       autoplay:true,
-       autoplayTimeout:5000,
-       autoplayHoverPause:true,
-       responsive:{
-           0:{
-               items:1,
-               nav: false
-           },
-           600:{
-               items:2
-           },
-           1024: {
-             item: 3
-           }
-       }
-});
-     
-   </script>
-   
-<script src="/btt.js"></script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 2,
+          },
+          1024: {
+            item: 3,
+          },
+        },
+      });
+    </script>
+
+    <script src="/btt.js"></script>
   </body>
 </html>

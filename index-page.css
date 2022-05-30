@@ -1,0 +1,25 @@
+.pageabout {
+    margin-top: 90px;
+    padding: 20px 0;
+  }
+  
+  nav#pageabout {
+    padding: 15px 20px;
+    background: #f7f9fc;
+  }
+  
+  .pageabout-item {
+    color: #2c3038;
+  
+    font-size: 14px;
+  }
+  
+  nav#pageabout a {
+    color: #dc4f72;
+    margin: 0 5px 0 0;
+    font-size: 14px;
+  }
+  
+  nav#pageabout a:hover {
+    text-decoration: underline;
+  }

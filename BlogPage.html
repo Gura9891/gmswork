@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="./index-page.css">
+    <link rel="stylesheet" href="./backtotop.css">
+    <link rel="stylesheet" href="./blog-css/BlogPage.css" />
+  </head>
+
+  <body>
+    <header class="container-fluid p-0 header fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white stroke">
+        <div class="container px-lg-5 px-sm-3">
+          <div class="header-logo">
+            <i class="fa-regular fa-handshake"></i>
+            <span>Masterwork</span>
+          </div>
+
+          <button
+            class="navbar-toggler p-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: #dc4f72"
+          >
+            <span>
+              <i class="fas fa-bars" style="color: #fff; font-size: 20px"></i
+            ></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav ml-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/services.html">Services</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a
+                  class="nav-link dropdown-toggle text-center text-danger"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul
+                  class="dropdown-menu p-1 text-start"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="./BlogPost.html">Blog Posts</a></li>
+                  <li><a class="dropdown-item" href="./BlogPage.html">Blog Single</a></li>
+                  <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contact</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="btn btn-outline-primary theme-button" href="/Contact.html"
+                  >SCHEDULE A DEMO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- right_sidebar -->
+    <section class="right_sidebar">
+      <div class="bg_right_sidebar d-flex flex-column align-items-center">
+        <div class="item_right_sidebar py-4">
+          <a href="">
+            <i class="fa-solid fa-angles-right"></i>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn btn_back">
+          <a href="">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back</span>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn">
+          <a href="">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+        </div>
+        <div class="item_right_sidebar mb-3 btn">
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Buy</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <nav id="pageabout" class="pageabout">
+      <div class="container pageabout-item">
+        <a href="index.html">Home</a> »
+        <span class="breadcrumb_last">Single Post</span>
+      </div>
+    </nav>
+
+    <div class="carousel">
+      <div class="container">
+        <div class="carousel-title">
+          <span>Masterwork</span>
+        </div>
+        <h1>Tools for business startup to professional</h1>
+        <div class="carousel-date">
+          <i class="fa-regular fa-clock"></i>
+          <span>Jan 2020</span>
+          <i class="fa-solid fa-user"></i>
+          <span> By admin</span>
+          <i class="fa-regular fa-heart"></i>
+          <span style="font-weight: 600">48</span><span> likes</span>
+          <i class="fa-regular fa-comments"></i>
+          <span style="font-weight: 600">12</span><span> comments</span>
+        </div>
+        <div class="carousel-art">
+          <img src="./blog-img/b6.jpg" alt="girlwithblackhair" />
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Repellat, hic reprehenderit eum
+            cupiditate deleniti asperiores illum ad tenetur aliquam culpa fugit
+            odit consequatur. Rerum illo accusantium aliquid quae adipisci
+            fugiat sapiente delectus unde architecto. Tempore saepe maxime illo
+            laborum obcaecati.
+          </p>
+        </div>
+        <div class="carousel-artpart2">
+          <img src="./blog-img/b1.jpg" alt="codinglaptop" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            perspiciatis repellendus velit nam fuga asperiores nemo commodi enim
+            corrupti est tenetur placeat veritatis, dolores laborum illo,
+            ducimus aut suscipit voluptate quo amet ratione magni nesciunt? Fuga
+            expedita earum veritatis optio dolorum deserunt eos. Non in
+            temporibus similique quibusdam nihil qui, consequatur, debitis ipsa
+            aperiam dicta possimus itaque unde hic, voluptatum expedita. Soluta
+            laboriosam obcaecati provident officiis, quod rerum quas optio.
+          </p>
+        </div>
+        <div class="carousel-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+            beatae ullam expedita. Ut explicabo minima fugit ipsum sapiente fuga
+            et facere est autem iste ducimus totam accusamus quasi distinctio,
+            excepturi voluptatum harum porro nostrum nemo iusto culpa expedita
+            cupiditate omnis. Animi iusto officiis at voluptates vel laboriosam
+            eum error voluptas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="maxim">
+      <div class="container">
+        <h1>
+          " Success is not final; failure is not fatal: it is the courage to
+          continue that counts. "
+        </h1>
+        <span style="letter-spacing: -1px">-----</span>
+        <p>Winston Churchill</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <h1>
+          <a href="#"
+            >Corporate, Business & Digital Agency Lorem ipsum dolor sit amet
+            consectetur.</a
+          >
+        </h1>
+        <p>
+          <i
+            >It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.</i
+          >
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam,
+          quos facere dolor repellendus odio. Voluptatum provident quasi
+          necessitatibus laboriosam alias dicta quis voluptate minus minima
+          dolorum quod, quaerat modi veritatis libero! Culpa facilis enim optio
+          veniam voluptas. Laudantium explicabo optio quam ea deleniti odio
+          totam adipisci illo, enim quos corrupti. Animi labore natus at quas
+          laborum. Soluta, nam molestiae.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          tenetur amet. Quibusdam nemo aut ut non aliquam nam est quae
+          aspernatur repellendus illo id earum ipsa debitis saepe maiores quasi
+          voluptate, sunt reiciendis voluptatibus veniam pariatur? Tempore
+          laudantium libero adipisci.
+        </p>
+        <div class="content-art">
+          <img src="./blog-img/b2.jpg" alt="codinglaptop" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            perspiciatis repellendus velit nam fuga asperiores nemo commodi enim
+            corrupti est tenetur placeat veritatis, dolores laborum illo,
+            ducimus aut suscipit voluptate quo amet ratione magni nesciunt? Fuga
+            expedita earum veritatis optio dolorum deserunt eos. Non in
+            temporibus similique quibusdam nihil qui, consequatur, debitis ipsa
+            aperiam dicta possimus itaque unde hic, voluptatum expedita. Soluta
+            laboriosam obcaecati provident officiis, quod rerum quas optio.
+          </p>
+        </div>
+        <div class="content-art">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            perspiciatis repellendus velit nam fuga asperiores nemo commodi enim
+            corrupti est tenetur placeat veritatis, dolores laborum illo,
+            ducimus aut suscipit voluptate quo amet ratione magni nesciunt? Fuga
+            expedita earum veritatis optio dolorum deserunt eos. Non in
+            temporibus similique quibusdam nihil qui, consequatur, debitis ipsa
+            aperiam dicta possimus itaque unde hic, voluptatum expedita. Soluta
+            laboriosam obcaecati provident officiis, quod rerum quas optio.
+          </p>
+          <img src="./blog-img/b3.jpg" alt="hand" />
+        </div>
+      </div>
+    </div>
+    <div class="control">
+      <div class="container">
+        <div class="control-row">
+          <div class="control-button">
+            <h1>
+              <i class="fa-solid fa-angles-left"></i><span> Prev Post</span>
+            </h1>
+            <div class="control-title">
+              <a href="#">
+                <img src="./blog-img/b9.jpg" alt="stone" />
+                <span>Why a visual identity sysytem is more memorable</span>
+              </a>
+            </div>
+          </div>
+          <div class="control-button">
+            <h1 style="text-align: right">
+              <span>Next Post </span><i class="fa-solid fa-angles-right"></i>
+            </h1>
+            <div style="text-align: right" class="control-title">
+              <a href="#">
+                <span>Make website that surpasses amongst all the</span>
+                <img src="./blog-img/b5.jpg" alt="stone" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="container">
+        <div class="comment-item">
+          <div class="comment-picture">
+            <img src="./blog-img/team1.jpg" alt="" />
+          </div>
+          <div class="comment-title">
+            <h1>Gwen Johnson</h1>
+            <h2>18 minutes ago</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              perferendis quisquam, sapiente dolore commodi dolores, iste
+              voluptates odit in veritatis rerum enim nesciunt tenetur voluptas.
+            </p>
+            <a>Reply</a>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-picture comment-reply">
+            <img src="./blog-img/team2.jpg" alt="" />
+          </div>
+          <div class="comment-title">
+            <h1>Gwen Johnson</h1>
+            <h2>18 minutes ago</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              perferendis quisquam, sapiente dolore commodi dolores, iste
+              voluptates odit in veritatis rerum enim nesciunt tenetur voluptas.
+            </p>
+            <a href="#">Reply</a>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-picture">
+            <img src="./blog-img/team3.jpg" alt="" />
+          </div>
+          <div class="comment-title">
+            <h1>Gwen Johnson</h1>
+            <h2>18 minutes ago</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              perferendis quisquam, sapiente dolore commodi dolores, iste
+              voluptates odit in veritatis rerum enim nesciunt tenetur voluptas.
+            </p>
+            <a href="#">Reply</a>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-picture">
+            <img src="./blog-img/team4.jpg" alt="" />
+          </div>
+          <div class="comment-title">
+            <h1>Gwen Johnson</h1>
+            <h2>18 minutes ago</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              perferendis quisquam, sapiente dolore commodi dolores, iste
+              voluptates odit in veritatis rerum enim nesciunt tenetur voluptas.
+            </p>
+            <a href="#">Reply</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="related-post">
+      <div class="container">
+        <h1>Related posts</h1>
+        <div class="related-row">
+          <div class="related-item">
+            <div class="related-pic">
+              <img src="./blog-img/b3.jpg" alt="">
+            </div>
+            <div class="related-title">
+              <div class="related-content">
+                <a>Android and IOS Apps Development</a>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+              <div class="related-field">
+                <h1>Business</h1>
+              </div>
+            </div>
+          </div>
+          <div class="related-item">
+            <div class="related-pic">
+              <img src="./blog-img/b2.jpg" alt="">
+            </div>
+            <div class="related-title">
+              <div class="related-content">
+                <a>Website Designing and Development</a>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+              <div class="related-field">
+                <h1>Industry</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <h1>Leave a reply</h1>
+        <div class="contact-information">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Email Address">
+          <input type="text" placeholder="Subject">
+          <textarea placeholder="Your Message" cols="10" rows="10"></textarea>
+          <button>ADD COMMENT</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <div class="col-big">
+            <div class="row-small">
+              <div class="col-small">
+                <h3>Company</h3>
+                <ul>
+                  <li>
+                    <a href="/index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="/about.html">About Us</a>
+                  </li>
+                  <li><a href="/services.html">Service</a></li>
+                  <li><a href="/BlogPost.html">Blog</a></li>
+                  <li><a href="/Contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-small">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>
+                    <a href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Branches</a>
+                  </li>
+                  <li><a href="#">Latest Media</a></li>
+                  <li><a href="#">About Our Company</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              <div class="col-small">
+                <h3>Our Services</h3>
+                <ul>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Terms</a>
+                  </li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Landing Page</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-big">
+            <h3>Newsletter</h3>
+            <div class="right-col">
+              <h4>Get the latest updates and offers.</h4>
+              <form action="#" class="subscribe" method="post">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Adress"
+                  required
+                />
+                <button type="submit">Go</button>
+                <p>
+                  Sign up for our latest news & articles. We won’t give you spam
+                  mails.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-below">
+          <div class="below-right">
+            © 2020 Masterwork. All rights reserved | Designed by
+            <a href="#">NguyenTuongGiang</a>
+          </div>
+          <div class="below-left">
+            <ul class="social">
+              <li>
+                <a href="#facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#google">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#github">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a id="btt"></a>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/btt.js"></script>
+  </body>
+</html>
