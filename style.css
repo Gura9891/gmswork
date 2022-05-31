@@ -1717,10 +1717,15 @@ nav#pageabout a:hover {
   }
   .number .col-sm-6 {
     width: 33%;
+    margin-top: 24px !important;
   }
   .number .mt-sm-5 {
     margin-top: 0 !important;
   }
+  .number .mt-4 {
+    margin-top: 24px!important;
+    margin-bottom: 24px!important;
+}
 }
 
 @media screen and (max-width: 768px) {
